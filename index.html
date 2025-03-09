@@ -1,0 +1,460 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Testimonial Slider</title>
+
+
+
+  </head>
+  <body>
+    <header class="text-gray-600 body-font">
+        <div class="container mx-5 flex flex-wrap p-1 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <img width="180" src="/images/Saylani logo.jpg" alt="">
+ 
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center ">
+            <a class="mr-5 hover:text-gray-900">About</a>
+            <a class="mr-5 hover:text-gray-900">Services</a>
+            <a class="mr-5 hover:text-gray-900">Media</a>
+            <a class="mr-5 hover:text-gray-900">Contact Us</a>
+            <a class="mr-5 hover:text-gray-900">Bank Details</a>
+            <a class="mr-5 hover:text-gray-900">Other Websites</a>
+          
+          <button  class="inline-flex items-center text-gray-100 bg-[#0d6efd] border-0 py-1 px-3 focus:outline-none hover: rounded text-base mt-4 md:mt-0 md:mr-2 ">
+Other Donations
+          </button>
+          <button class="inline-flex items-center text-gray-100 bg-[#0d6efd] border-0 py-1 px-3 focus:outline-none hover:bg-[#8dc63f] rounded text-base mt-4 md:mt-0">DONATE NOW
+          </button>
+        </nav>
+
+        </div>
+      </header>
+      <section class="relative bg-white py-1 px-8 lg:px-24 flex flex-col lg:flex-row items-center">
+        <div class="lg:w-1/2 space-y-6 text-center lg:text-left">
+            <h1 class="text-4xl font-bold text-gray-900">
+                Welcome to the <span class="text-[#8dc63f]">Saylani</span> Welfare
+                Non Governmental Organization in Pakistan
+            </h1>
+            <p class="text-lg font-semibold text-gray-800">
+                The largest NGO offering free <span class="text-blue-600">daily Monthly Family Support, free Education</span>
+            </p>
+            <p class="text-gray-600">
+                Saylani Welfare is on the ground and already working with local communities to assess how best to support underprivileged families in more than 63 areas of day to day lives.
+            </p>
+            <a href="#" class="inline-flex items-center px-10 py-3 border border-gray-900 text-gray-900  transition rounded-md">
+                Explorer More →
+            </a>
+        </div>
+        <div class="lg:w-1/2 flex flex-wrap justify-center lg:justify-end gap-4 mt-8 lg:mt-0">
+            <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                <img src="/images/Lunch.jpg" alt="Helping Hands" class="w-full h-full object-cover">
+            </div>
+            <div class="w-63 h-41 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                <img src="/images/Hero1.jpg" alt="Food Distribution" class="w-full h-full object-cover ">
+            </div>
+            <div class="w-63 h-63 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                <img src="/images/Hero2.jpg" alt="Helping Children" class="w-full h-full object-cover">
+            </div>
+            <div class="w-41 h-38 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                <img src="/images/Hero3.jpg" alt="Community Meal" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+    
+    <section class="bg-[#f0f0f0] p-6 rounded-lg flex items-center space-x-4 mx-auto max-w-5xl">
+      <!-- Input Field -->
+      <div class="flex items-center bg-gray-800 text-white rounded-lg overflow-hidden">
+          <span class="px-3 py-2">General</span>
+          <input type="number" class="w-20 bg-white text-black border-black border-1  px-2 py-2 outline-none" value="0">
+          <span class="px-3 py-2">Rs.</span>
+      </div>
+      
+      <!-- Category Buttons -->
+      <button class="px-4 py-auto h-15 bg-white text-gray-900 rounded-lg shadow-md hover:bg-gray-900 hover:text-gray-100 transition">Blood Bank / Thalassemia Treatment</button>
+      <button class="px-4 py-auto h-15 bg-white text-gray-900 rounded-lg shadow-md hover:bg-gray-900 hover:text-gray-100 transition">Family Kifalat</button>
+      <button class="px-4 py-auto h-15 bg-white text-gray-900 rounded-lg shadow-md hover:bg-gray-900 hover:text-gray-100 transition">Medical</button>
+      <button class="px-4 py-auto h-15 bg-white text-gray-900 rounded-lg shadow-md hover:bg-gray-900 hover:text-gray-100 transition">Food</button>
+      
+      <!-- Donate Button -->
+      <button class="px-4 py-2 bg-[#8dc63f] text-white rounded-lg shadow-md hover:bg-green-600 transition">Quick Donate</button>
+  </section>
+
+  <div class="w-full max-w-3xl flex items-center m-auto">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="/images/card1.jpg" alt="Slide 1" class="w-full h-110 rounded-lg">
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/card2.jpg" alt="Slide 2" class="w-full h-110 rounded-lg">
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/card3.jpg" alt="Slide 3" class="w-full h-110 rounded-lg">
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+    });
+</script>
+<title>What We Are Doing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .box {
+            width: 150px;
+            padding: 20px;
+            background-color: #f0fcd7;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .box img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .box p {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 class="section-title">What We Are Doing</h2>
+    
+    <div class="container mx-auto">
+        <div class="box">
+            <img src="/images/services-image1.webp" alt="Welfare">
+            <p>Welfare</p>
+        </div>
+        <div class="box">
+            <img src="/images/Medical.webp" alt="Medical">
+            <p>Medical</p>
+        </div>
+        <div class="box">
+            <img src="/images/Sadqah.webp" alt="Online Sadaqah">
+            <p>Online Sadaqah</p>
+        </div>
+        <div class="box">
+            <img src="/images/Water.webp" alt="Clean Water">
+            <p>Clean Water</p>
+        </div>
+        <div class="box">
+            <img src="/images/Education.webp" alt="Education">
+            <p>Education</p>
+        </div>
+        <div class="box">
+            <img src="/images/Food.webp" alt="Food">
+            <p>Food</p>
+        </div>
+    </div>
+
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          background-color: #f8f8f8;
+      }
+      .container {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 20px;
+          padding: 20px;
+      }
+      .card {
+          position: relative;
+          width: 300px;
+          height: 200px;
+          border-radius: 15px;
+          overflow: hidden;
+          cursor: pointer;
+      }
+      .card img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.3s ease;
+      }
+      .card:hover img {
+          transform: scale(1.1);
+      }
+      .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          font-size: 18px;
+          font-weight: bold;
+      }
+      .donate-btn {
+          margin-top: auto;
+          width: 80%;
+          padding: 10px;
+          background: #7AC142;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          font-size: 16px;
+          cursor: pointer;
+          transition: background 0.3s;
+      }
+      .donate-btn:hover {
+          background: #5a9d30;
+      }
+  </style>
+</head>
+<body>
+
+  <div class="container m-auto mb-0 py-1 h-auto">
+      <div class="card">
+          <img src="/images/D1.jpg" alt="Sehri & Iftari">
+          <div class="overlay">
+              Sehri & Iftari
+              <button class="donate-btn">Donate</button>
+          </div>
+      </div>
+
+      <div class="card">
+          <img src="/images/D2.jpg" alt="Zakat">
+          <div class="overlay">
+              Zakat
+              <button class="donate-btn">Donate</button>
+          </div>
+      </div>
+
+      <div class="card">
+          <img src="/images/D3.jpg" alt="Support Gaza’s Families">
+          <div class="overlay">
+              Support Gaza’s Families
+              <button class="donate-btn">Donate</button>
+          </div>
+      </div>
+  </div>
+  <div class="stats-section bg-blue-800">
+    <div class="stat m-auto">
+        <img src="/images/Food.webp" alt="Food">
+        <h3 class="counter" data-target="300000">0</h3>
+        <p>Food (Daily)</p>
+    </div>
+    <div class="stat m-auto">
+        <img src="/images/adoption.webp" alt="Family Adoption">
+        <h3 class="counter" data-target="20000">0</h3>
+        <p>Family Adoption (Monthly)</p>
+    </div>
+    <div class="stat">
+        <img src="/images/Education.webp" alt="Education">
+        <h3 class="counter" data-target="25000">0</h3>
+        <p>Education (Monthly)</p>
+    </div>
+    <div class="stat">
+        <img src="/images/Medical.webp" alt="Medical">
+        <h3 class="counter" data-target="125000">0</h3>
+        <p>Medical (Monthly)</p>
+    </div>
+</div>
+
+<script>
+    const counters = document.querySelectorAll('.counter');
+    const options = {
+        root: null,
+        threshold: 0.5
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                let target = +entry.target.getAttribute('data-target');
+                let count = 0;
+                let increment = target / 100;
+                let interval = setInterval(() => {
+                    count += increment;
+                    entry.target.textContent = Math.floor(count);
+                    if (count >= target) {
+                        entry.target.textContent = target;
+                        clearInterval(interval);
+                    }
+                }, 20);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
+
+    counters.forEach(counter => observer.observe(counter));
+</script>
+
+<title>Media Updates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .media-updates {
+            margin: 30px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .subscription-box {
+            width: 60%;
+            margin: auto;
+            background: url('hero.PNG') no-repeat center center/cover;
+            padding: 50px;
+            border-radius: 10px;
+            position: relative;
+            color: white;
+            margin-bottom: 40px;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(11, 69, 184, 0.7);
+            border-radius: 10px;
+        
+        }
+        .content {
+            position: relative;
+            z-index: 2;
+        }
+        h2 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .email-input {
+            width: 80%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+            margin-bottom: 15px;
+        }
+        .subscribe-btn {
+            width: 85%;
+            padding: 12px;
+            background: white;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .subscribe-btn:hover {
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="media-updates">Media Updates</div>
+
+    <div class="subscription-box m\">
+        <div class="overlay"></div>
+        <div class="content m-auto">
+            <h2 class="text-st">Saylani Guide</h2>
+            <input type="email" class="email-input" placeholder="Enter E-Mail Address">
+            <br>
+            <button class="subscribe-btn">SUBSCRIBE</button>
+        </div>
+    </div>
+  <footer style="background-color: #333; color: white; padding: 30px 0; text-align: center;">
+    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; padding: 20px;">
+        <div style="text-align: left;">
+            <img src="/images/Saylani logo b.PNG" alt="Saylani Logo" width="200">
+            <div style="margin-top: 15px;">
+                <a href="#"><img src="/images/fb.jpg" alt="Facebook" width="40"></a>
+                <a href="#"><img src="/images/x.jpg" alt="Twitter" width="40"></a>
+                <a href="#"><img src="/images/yt.png" alt="YouTube" width="40"></a>
+                <a href="#"><img src="/images/wa.jpg" alt="WhatsApp" width="40"></a>
+            </div>
+        </div>
+
+        <div>
+            <h3>About</h3>
+            <p><a href="#" style="color: white; text-decoration: none;">Introduction</a></p>
+            <p><a href="#" style="color: white; text-decoration: none;">Chairman Message</a></p>
+            <p><a href="#" style="color: white; text-decoration: none;">Annual Report</a></p>
+            <p><a href="#" style="color: white; text-decoration: none;">Bank Details</a></p>
+        </div>
+
+        <div>
+            <h3>Explore</h3>
+            <p><a href="#" style="color: white; text-decoration: none;">News</a></p>
+            <p><a href="#" style="color: white; text-decoration: none;">Media</a></p>
+            <p><a href="#" style="color: white; text-decoration: none;">Contact</a></p>
+            <p><a href="#" style="color: white; text-decoration: none;">Donations</a></p>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+            <p>A-25, Bahadurabad Chowrangi Karachi, Pakistan</p>
+            <p>UAN: 111-729-526 (+0092-213)4130786-90</p>
+            <p>Cell: 92-311-1729526</p>
+            <p>USA: +1(716)941 7792</p>
+            <p>UK: (+44)115 970 6256</p>
+            <p>For Istikhara Contact <img src="/images/contact.png" alt="Contact" width="20"></p>
+        </div>
+    </div>
+
+    <div style="margin: 20px 0;">
+        <img src="/images/acca.png" alt="ACCA Approved Employer" width="100 m-auto">
+        <p>Trainee Development - Gold</p>
+    </div>
+
+    <hr style="border: 1px solid white; width: 90%;">
+
+    <p>IP address data powered by IPinfo</p>
+    <p>Copyright © 2025 by Saylani Welfare Int Trust</p>
+</footer>
+
+    </body>
+</html>
